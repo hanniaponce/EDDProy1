@@ -179,5 +179,27 @@ namespace EDDemo.Estructuras_No_Lineales
                 return;
             }
         }
+
+        private void btnPodar_Click(object sender, EventArgs e)
+        {
+            miRaiz= miArbol.RegresaRaiz();
+
+                if (miRaiz == null)
+                {
+                    MessageBox.Show("El arbol est avacio");
+                    return;
+                }
+            int dato = int.Parse(txtDato.Text);
+
+            miArbol.PodarArbol(dato, ref miRaiz);
+
+            if (miRaiz == null)
+            {
+                MessageBox.Show("Nodo eliminado.");
+                txtDato.Text = "";
+            }
+                
+            }
+        }
     }
-}
+

@@ -45,6 +45,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.lblPost = new System.Windows.Forms.Label();
             this.lblDato = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnPodar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.txtNumero)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +78,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.txtArbol.Multiline = true;
             this.txtArbol.Name = "txtArbol";
             this.txtArbol.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txtArbol.Size = new System.Drawing.Size(716, 366);
+            this.txtArbol.Size = new System.Drawing.Size(898, 366);
             this.txtArbol.TabIndex = 2;
             // 
             // btnLimpiar
@@ -208,11 +209,22 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // btnPodar
+            // 
+            this.btnPodar.Location = new System.Drawing.Point(672, 21);
+            this.btnPodar.Name = "btnPodar";
+            this.btnPodar.Size = new System.Drawing.Size(82, 29);
+            this.btnPodar.TabIndex = 15;
+            this.btnPodar.Text = "Podar";
+            this.btnPodar.UseVisualStyleBackColor = true;
+            this.btnPodar.Click += new System.EventHandler(this.btnPodar_Click);
+            // 
             // frmArboles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 603);
+            this.ClientSize = new System.Drawing.Size(912, 603);
+            this.Controls.Add(this.btnPodar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblDato);
             this.Controls.Add(this.lblPost);
@@ -256,5 +268,6 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.Label lblPost;
         private System.Windows.Forms.Label lblDato;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnPodar;
     }
 }
