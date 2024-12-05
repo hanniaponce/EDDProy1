@@ -49,14 +49,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Estructuras Lineales\Clases\Listas.cs" />
-    <Compile Include="Estructuras Lineales\Clases\Nodo.cs" />
-    <Compile Include="Estructuras Lineales\Clases\Pilas.cs" />
-    <Compile Include="Estructuras No Lineales\Clases\ArbolBusqueda.cs" />
-    <Compile Include="Estructuras No Lineales\frmArboles.cs">
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\clases\Externos\MDirecta.cs" />
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\clases\Externos\Intercalacion.cs" />
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\clases\Externos\MNatural.cs" />
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\clases\Internos\Burbuja.cs" />
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\clases\Internos\QuickSort.cs" />
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\clases\Internos\RadixSort.cs" />
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\clases\Internos\ShellSort.cs" />
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\forms\Externos\Intercalacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Estructuras No Lineales\frmArboles.Designer.cs">
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\forms\Externos\Intercalacion.Designer.cs">
+      <DependentUpon>Intercalacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\forms\Externos\MDirecta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\forms\Externos\MDirecta.Designer.cs">
+      <DependentUpon>MDirecta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\forms\Externos\MNatural.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\forms\Externos\MNatural.Designer.cs">
+      <DependentUpon>MNatural.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\forms\Internos\Burbuja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\forms\Internos\Burbuja.Designer.cs">
+      <DependentUpon>Burbuja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\forms\Internos\QuickSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\forms\Internos\QuickSort.Designer.cs">
+      <DependentUpon>QuickSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\forms\Internos\RadixSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\forms\Internos\RadixSort.Designer.cs">
+      <DependentUpon>RadixSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\forms\Internos\ShellSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda y Ordenamineto\Ordenamiento\forms\Internos\ShellSort.Designer.cs">
+      <DependentUpon>ShellSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Clases\Listas.cs" />
+    <Compile Include="Estructuras Lineales\Clases\Nodo.cs" />
+    <Compile Include="Estructuras Lineales\Clases\NodoCuatro.cs" />
+    <Compile Include="Estructuras Lineales\Clases\Pilas.cs" />
+    <Compile Include="Estructuras No Lineales\Clases\ArbolBusqueda.cs" />
+    <Compile Include="Estructuras No Lineales\forms\frmArboles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras No Lineales\forms\frmArboles.Designer.cs">
       <DependentUpon>frmArboles.cs</DependentUpon>
     </Compile>
     <Compile Include="Estructuras No Lineales\Clases\NodoBinario.cs" />
@@ -72,16 +122,19 @@
     <Compile Include="frmInicio.Designer.cs">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Estructuras Lineales\frmPilas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Estructuras Lineales\frmPilas.Designer.cs">
-      <DependentUpon>frmPilas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Graphviz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Estructuras No Lineales\frmArboles.resx">
+    <EmbeddedResource Include="Busqueda y Ordenamineto\Ordenamiento\forms\Externos\Intercalacion.resx">
+      <DependentUpon>Intercalacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busqueda y Ordenamineto\Ordenamiento\forms\Externos\MDirecta.resx">
+      <DependentUpon>MDirecta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busqueda y Ordenamineto\Ordenamiento\forms\Externos\MNatural.resx">
+      <DependentUpon>MNatural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras No Lineales\forms\frmArboles.resx">
       <DependentUpon>frmArboles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGrafica.resx">
@@ -89,9 +142,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Estructuras Lineales\frmPilas.resx">
-      <DependentUpon>frmPilas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -115,6 +165,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Algoritmos Recursivos\clases\" />
+    <Folder Include="Algoritmos Recursivos\forms\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

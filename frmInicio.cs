@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
+//using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -30,14 +30,14 @@ namespace EDDemo
 
         private void pilasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPilas mPilas = new frmPilas();
-            mPilas.MdiParent = this;
-            mPilas.Show();
+           // Form mPilas = new ();
+           // mPilas.MdiParent = this;
+           // mPilas.Show();
         }
 
         private void estructurasLinealesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void arbolesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -45,6 +45,16 @@ namespace EDDemo
             frmArboles mArboles = new frmArboles();
             mArboles.MdiParent = this;
             mArboles.Show();
+        }
+
+        private void ordenacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPrubea_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

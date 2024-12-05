@@ -4,15 +4,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EDDemo
+namespace EstructurasLin
 {
-    public class Pilas
+    class Pilas
     {
-        public void Push()
+
+        NodoCuatro arriba;
+
+        public NodoCuatro Arriba()
         {
-            Nodo Nuevo = new Nodo();
-            Nuevo.sig = null;
+            return arriba;
+        }
+
+        public void Apilar(NodoCuatro nodoC)
+        {
+            if (arriba == null)
+            {
+                arriba = nodoC;
+            }
+            else
+            {
+                NodoCuatro auxiliar = arriba;
+                arriba = nodoC;
+                arriba.Siguiente = auxiliar;
+            }
 
         }
+
+        public void Desapilar()
+        {
+
+            if (arriba != null)
+            {
+                arriba = arriba.Siguiente;
+            }
+
+        }
+
     }
 }
+
